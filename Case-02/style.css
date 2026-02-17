@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Ubuntu', sans-serif; 
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    border-bottom: 2px solid #666;
+    background-color: white;
+}
+
+.logo { font-size: 28px; font-weight: bold; }
+.logo .i, .logo .j, .logo .s, .logo .e { color: red; }
+
+.top-nav a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+
+.main-wrapper {
+    display: flex; 
+    min-height: calc(100vh - 100px); 
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #3b0087; 
+    color: white;
+    padding: 20px 0;
+    
+}
+
+.sidebar ul { list-style: none; }
+.sidebar li {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+.image-container {
+    display: flex;
+    border: 2px solid #5d4037; 
+    padding: 2px;
+    margin-bottom: 20px;
+    gap: 0; 
+}
+
+.img-placeholder {
+    flex: 1; 
+    height: 300px;
+    background: linear-gradient(to bottom, #ffffff, #dcdcdc); 
+    border: 1px solid green; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-placeholder img {
+    width: 150px;
+    height: auto;
+    opacity: 0.9;
+}
+
+.text-section p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+footer {
+    background-color: #777;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
