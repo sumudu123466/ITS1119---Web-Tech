@@ -79,6 +79,25 @@ header {
     opacity: 0.9;
 }
 
+.swing-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+   
+    
+    
+    animation: oscillation 2s ease-in-out infinite;
+}
+
+
+@keyframes oscillation {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-90deg); } 
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(90deg); } 
+    100% { transform: rotate(0deg); }
+}
+
 .text-section p {
     font-size: 14px;
     line-height: 1.6;
